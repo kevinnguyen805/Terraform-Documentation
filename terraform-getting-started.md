@@ -5,16 +5,16 @@ desired resources, such as a virtual machine or network interface, on almost any
 A provider is responsible for understanding API interactions and managing resources.
 
 
-# Learning Objectives
+## Learning Objectives
 In this tutorial, you will be able to provision and destroy a Nginx webserver using Terraform and Docker. 
 
 
-# Prerequisites 
+## Prerequisites 
 - [Terraform](https://www.terraform.io/downloads.html)
 - [Docker](https://www.docker.com/products/docker-desktop) 
 
 
-# Installing Terraform 
+## Installing Terraform 
 To install Terraform, download the [appropriate package](https://www.terraform.io/downloads.html) for your operating system. 
 
 Once the download is complete, unzip the package. 
@@ -29,7 +29,7 @@ $ terraform
 ```
 If you received an error that ```terraform``` could not be found, please check to see if Terraform is in the correct ```PATH```.
 ```shell 
--bash: terraform: command not found
+$ terraform: command not found
 ```
 
 Upon successful installation, your terminal should look like this. 
@@ -52,7 +52,7 @@ Common commands:
 
 
 
-# Setup Infrastructure
+## Setup Infrastructure
 Now that you have Terraform installed, you are ready to create infrastructure. 
 
 To start, open your terminal and create a new directory.
@@ -71,7 +71,7 @@ $ touch main.tf
 ```
 
 
-# Setup Provider
+## Setup Provider
 The first step to using Terraform is to configure the provider(s) you want to use.
 We will use the [Docker Provider](https://www.terraform.io/docs/providers/docker/index.html). 
 
@@ -102,7 +102,7 @@ resource "docker_image" "nginx" {
 
 
 
-# Initialize Infrastructure
+## Initialize Infrastructure
 To install the provider and initialize the server, enter the ```init``` command.
 ```shell
 $ terraform init
@@ -157,7 +157,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ```
 
 
-# Destroy Infrastructure
+## Destroy Infrastructure
 To stop your server or destroy its resources, run the ```destroy``` command.
 ```shell 
 $ terraform destroy 
@@ -179,7 +179,7 @@ $ Destroy complete! Resources: 2 destroyed.
 
 
 
-# Next steps 
+## Next steps 
 In this guide, you built and destroyed a Nginx server using Terraform and Docker.
 This involved installing Terraform in your system, setting up a directory for your configuration, 
 installing the Docker provider and resources, and using Terraform functionality to manage your infrastructure.
