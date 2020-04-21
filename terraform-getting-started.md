@@ -1,4 +1,4 @@
-# Learn to provision an infrastructure with Terraform
+# Provision an Infrastructure with Terraform
 Terraform is a tool for building, changing, and versioning infrastructures.
 A key feature is Infrastructure as Code (IaC). This feature allows operators to manage their
 desired resources, such as a virtual machine or network interface, on almost any provider, including AWS, GitHub, and Docker.
@@ -52,7 +52,7 @@ Common commands:
 
 
 
-## Setup Infrastructure
+## Set Up Directory
 Now that you have Terraform installed, you are ready to create infrastructure. 
 
 To start, open your terminal and create a new directory.
@@ -71,7 +71,7 @@ $ touch main.tf
 ```
 
 
-## Setup Provider
+## Configure Provider
 The first step to using Terraform is to configure the provider(s) you want to use.
 We will use the [Docker Provider](https://www.terraform.io/docs/providers/docker/index.html). 
 
@@ -179,7 +179,7 @@ $ Destroy complete! Resources: 2 destroyed.
 
 
 
-## Next steps 
+## Next Steps 
 In this guide, you built and destroyed a Nginx server using Terraform and Docker.
 This involved installing Terraform in your system, setting up a directory for your configuration, 
 installing the Docker provider and resources, and using Terraform functionality to manage your infrastructure.
